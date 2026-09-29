@@ -1,0 +1,430 @@
+{
+  "raw_orders": {
+    "value": 99441.0,
+    "description": "Rows in raw orders file"
+  },
+  "dq_tests": {
+    "value": 24.0,
+    "description": "Data-quality tests run"
+  },
+  "dq_errors_passed": {
+    "value": 15.0,
+    "description": "Blocking tests, all passing"
+  },
+  "orders_in_window": {
+    "value": 99092.0,
+    "description": "Orders purchased Jan 2017 \u2013 Aug 2018"
+  },
+  "delivered_in_window": {
+    "value": 96203.0,
+    "description": "Delivered orders in window (delay analysis base)"
+  },
+  "reviewed_in_window": {
+    "value": 95560.0,
+    "description": "Delivered orders with a review"
+  },
+  "late_rate": {
+    "value": 0.06788769580990198,
+    "description": "Share of delivered orders that arrived after the promised date"
+  },
+  "median_days_early": {
+    "value": 12.0,
+    "description": "Median days delivered BEFORE the promised date"
+  },
+  "gmv_window": {
+    "value": 15786203.57,
+    "description": "GMV (items + freight), R$, in window"
+  },
+  "n_customers": {
+    "value": 95774.0,
+    "description": "Unique customers in window"
+  },
+  "n_sellers": {
+    "value": 3060.0,
+    "description": "Active sellers in window"
+  },
+  "funnel_happy_share": {
+    "value": 0.7440963952690429,
+    "description": "Share of placed orders delivered on time AND rated 4-5 stars"
+  },
+  "repeat_customer_share": {
+    "value": 0.030356784609374174,
+    "description": "Share of customers (in window) with 2+ orders"
+  },
+  "late_rate_seller_shipped_late": {
+    "value": 0.2110476634424892,
+    "description": "Late rate when seller handed over AFTER its shipping deadline"
+  },
+  "late_rate_seller_shipped_ontime": {
+    "value": 0.05386775010842026,
+    "description": "Late rate when seller met its shipping deadline"
+  },
+  "carrier_days_late": {
+    "value": 27.898737252563677,
+    "description": "Mean carrier transit days, late orders"
+  },
+  "carrier_days_ontime": {
+    "value": 7.989622716963118,
+    "description": "Mean carrier transit days, on-time orders"
+  },
+  "late_rate_worst_state": {
+    "value": 0.21464646464646464,
+    "description": "Highest state late rate (AL)"
+  },
+  "late_rate_best_state": {
+    "value": 0.027586206896551724,
+    "description": "Lowest state late rate (AM)"
+  },
+  "score_ontime": {
+    "value": 4.291157408445651,
+    "description": "Mean review score, on-time orders"
+  },
+  "score_late": {
+    "value": 2.270617748510505,
+    "description": "Mean review score, late orders"
+  },
+  "score_7plus_late": {
+    "value": 1.7276923076923076,
+    "description": "Mean review score, 7+ days late"
+  },
+  "one_star_ontime": {
+    "value": 0.06597743939359961,
+    "description": "1-star share, on-time orders"
+  },
+  "one_star_late": {
+    "value": 0.5376293508936971,
+    "description": "1-star share, late orders"
+  },
+  "score_day0": {
+    "value": 4.03359375,
+    "description": "Mean score, delivered ON the promised day"
+  },
+  "score_day1": {
+    "value": 3.7313797313797314,
+    "description": "Mean score, delivered 1 day late"
+  },
+  "rd_jump_h3": {
+    "value": -0.03443901954320516,
+    "description": "RD level jump in stars at the promise (bandwidth 3 days)"
+  },
+  "rd_jump_h3_lo": {
+    "value": -0.18320402661008006,
+    "description": "95% CI low"
+  },
+  "rd_jump_h3_hi": {
+    "value": 0.11432598752366974,
+    "description": "95% CI high"
+  },
+  "rd_kink_h3": {
+    "value": -0.47561295534651826,
+    "description": "RD slope change: extra stars lost per day late (bandwidth 3)"
+  },
+  "rd_kink_h3_lo": {
+    "value": -0.5744237434136092,
+    "description": "95% CI low"
+  },
+  "rd_kink_h3_hi": {
+    "value": -0.3768021672794272,
+    "description": "95% CI high"
+  },
+  "density_log_jump": {
+    "value": -0.32314089356467335,
+    "description": "Log change in order density at the promise (negative = fewer orders just after)"
+  },
+  "rd_kink_donut": {
+    "value": -0.3239300779748646,
+    "description": "RD kink excluding days 0 and 1 (donut), bandwidth 6"
+  },
+  "pre_delivery_review_share_late": {
+    "value": 0.7445907808090311,
+    "description": "Share of late orders reviewed BEFORE the parcel arrived"
+  },
+  "pre_delivery_review_share_3plus": {
+    "value": 0.937885725661955,
+    "description": "Same, orders 3+ days late"
+  },
+  "timing_gap_stars": {
+    "value": 1.201115090692146,
+    "description": "Mean star gap: post- vs pre-delivery reviews at the same days-late"
+  },
+  "comment_not_received_late": {
+    "value": 0.3685470995210218,
+    "description": "Share of late-order comments saying 'didn't receive / hasn't arrived / still not'"
+  },
+  "comment_not_received_ontime": {
+    "value": 0.03850665140895437,
+    "description": "Same share, on-time orders"
+  },
+  "causal_n": {
+    "value": 95560.0,
+    "description": "Orders in causal sample"
+  },
+  "causal_n_late": {
+    "value": 6378.0,
+    "description": "Late orders in causal sample"
+  },
+  "psm_matched_share": {
+    "value": 1.0,
+    "description": "Share of late orders matched within caliper"
+  },
+  "effect_naive": {
+    "value": -2.020539659935146,
+    "description": "Naive late-vs-on-time difference in stars"
+  },
+  "effect_sellerFE": {
+    "value": -1.9373503255286648,
+    "description": "Effect of lateness on stars, within-seller (seller FE)"
+  },
+  "effect_aipw": {
+    "value": -1.9840275988949065,
+    "description": "Effect of lateness on stars, doubly-robust ATT"
+  },
+  "effect_aipw_lo": {
+    "value": -2.025129843998227,
+    "description": "95% CI low"
+  },
+  "effect_aipw_hi": {
+    "value": -1.942925353791586,
+    "description": "95% CI high"
+  },
+  "effect_psm": {
+    "value": -1.9833803700219506,
+    "description": "Effect of lateness on stars, propensity matching ATT"
+  },
+  "effect_one_star_pp": {
+    "value": 0.4701026023766256,
+    "description": "Effect of lateness on probability of a 1-star review (AIPW ATT)"
+  },
+  "effect_one_star_lo": {
+    "value": 0.45747457275762626,
+    "description": "95% CI low"
+  },
+  "effect_one_star_hi": {
+    "value": 0.48273063199562494,
+    "description": "95% CI high"
+  },
+  "effect_1day": {
+    "value": -0.5329346422340209,
+    "description": "Within-seller effect of being 1 day late (stars)"
+  },
+  "effect_8to14": {
+    "value": -2.5264989570898804,
+    "description": "Within-seller effect of 8-14 days late (stars)"
+  },
+  "logrank_p": {
+    "value": 0.0025602431723763122,
+    "description": "Log-rank test p-value, time-to-repeat late vs on-time"
+  },
+  "repeat180_ontime": {
+    "value": 0.01855545482018737,
+    "description": "180-day repeat rate after an on-time first order"
+  },
+  "repeat180_late": {
+    "value": 0.013493253373313344,
+    "description": "180-day repeat rate after a late first order"
+  },
+  "effect_repeat_pp": {
+    "value": -0.0028496992449726583,
+    "description": "Doubly-robust effect of a late first order on 180-day repeat (proportion)"
+  },
+  "effect_repeat_lo": {
+    "value": -0.007629655353108289,
+    "description": "95% CI low"
+  },
+  "effect_repeat_hi": {
+    "value": 0.0019302568631629725,
+    "description": "95% CI high"
+  },
+  "repeat_value_180": {
+    "value": 157.91415882967604,
+    "description": "Mean GMV (R$) bought in 180 days by customers who came back"
+  },
+  "repeat_value_180_se": {
+    "value": 5.49714628320186,
+    "description": "Standard error of the above"
+  },
+  "repeat_n_eligible": {
+    "value": 52303.0,
+    "description": "First-order customers with a full 180-day window"
+  },
+  "cate_p10": {
+    "value": -2.7030265606501387,
+    "description": "10th percentile of individual (T-learner) effects"
+  },
+  "cate_p90": {
+    "value": -1.0113524143329662,
+    "description": "90th percentile of individual (T-learner) effects"
+  },
+  "effect_ate_dr": {
+    "value": -1.8555798021795622,
+    "description": "Average effect of lateness over all orders (DR ATE), stars"
+  },
+  "worst_state_damage": {
+    "value": 54.138462444731395,
+    "description": "Stars lost per 100 orders, worst state (AL)"
+  },
+  "auc_purchase": {
+    "value": 0.6391153100386123,
+    "description": "Out-of-time ROC-AUC, late-risk model at purchase"
+  },
+  "auc_handoff": {
+    "value": 0.7298101455185153,
+    "description": "Out-of-time ROC-AUC, model at carrier handoff"
+  },
+  "capture10_handoff": {
+    "value": 0.3271211378126533,
+    "description": "Share of late orders in top-10% riskiest (handoff model)"
+  },
+  "capture10_purchase": {
+    "value": 0.19936243256498284,
+    "description": "Share of late orders in top-10% riskiest (purchase model)"
+  },
+  "capture10_rule": {
+    "value": 0.09588033349681216,
+    "description": "Same, rule of thumb"
+  },
+  "test_late_rate": {
+    "value": 0.07726850711484169,
+    "description": "Late rate in 2018 test period"
+  },
+  "olist_mean_promise_test": {
+    "value": 23.438126456600415,
+    "description": "Olist mean promised days, 2018 test orders"
+  },
+  "olist_late_test": {
+    "value": 0.07726850711484169,
+    "description": "Olist late rate, 2018 test orders"
+  },
+  "engine_promise_same_late": {
+    "value": 22.04062301929807,
+    "description": "Engine mean promise at Olist's late rate (days)"
+  },
+  "engine_days_saved": {
+    "value": 1.397503437302344,
+    "description": "Days shorter promise at the same late rate"
+  },
+  "engine_late_same_promise": {
+    "value": 0.0656441593398748,
+    "description": "Engine late rate at Olist's mean promise length"
+  },
+  "engine_late_at_18d": {
+    "value": 0.1323518360151671,
+    "description": "Engine late rate at an 18-day average promise"
+  },
+  "uniform_cut_late_at_18d": {
+    "value": 0.1906298647757651,
+    "description": "Late rate if Olist's promises were cut uniformly to an 18-day average"
+  },
+  "engine_q_match": {
+    "value": 0.95,
+    "description": "Engine quantile used in monthly comparison"
+  },
+  "repeat_gmv_lost_low": {
+    "value": 0.0,
+    "description": "Repeat GMV lost in 12 months, low case (R$)"
+  },
+  "repeat_gmv_lost_base": {
+    "value": 2518.6939878719913,
+    "description": "Repeat GMV lost in 12 months, base case (R$)"
+  },
+  "repeat_gmv_lost_high": {
+    "value": 7203.5383490020195,
+    "description": "Repeat GMV lost in 12 months, high case (R$)"
+  },
+  "late_orders_L12": {
+    "value": 5762.0,
+    "description": "Late deliveries, Sep 2017 \u2013 Aug 2018"
+  },
+  "late_gmv_L12": {
+    "value": 1001110.3200000001,
+    "description": "GMV on late orders, last 12 months (R$)"
+  },
+  "stars_lost_L12": {
+    "value": 11431.967024832451,
+    "description": "Stars lost to lateness, last 12 months (base)"
+  },
+  "one_star_extra_L12": {
+    "value": 2708.731194894117,
+    "description": "Extra 1-star reviews caused by lateness, last 12 months (base)"
+  },
+  "persist_seller": {
+    "value": 0.13679676975925742,
+    "description": "Correlation of 2017 vs 2018 late rate across sellers (\u226520 orders each year)"
+  },
+  "persist_route": {
+    "value": 0.7334353562151235,
+    "description": "Same, across routes (\u226550 orders each year)"
+  },
+  "persist_state": {
+    "value": 0.7187640248392325,
+    "description": "Same, across customer states"
+  },
+  "route_capture_at10pct_orders": {
+    "value": 0.2082667066568993,
+    "description": "Late orders covered when routes touching 10% of orders are prioritised"
+  },
+  "seller_capture_at10pct_orders": {
+    "value": 0.1238280010385714,
+    "description": "Same, sellers"
+  },
+  "order_capture_at10pct_orders": {
+    "value": 0.3271211378126533,
+    "description": "Same, order-level handoff model"
+  },
+  "top12_routes_late_share": {
+    "value": 0.6701814615007357,
+    "description": "Share of 2018 late orders on the 12 highest-priority routes"
+  },
+  "lever_A_late_avoided": {
+    "value": 862.596350989193,
+    "description": "Late orders avoided per year, lever A (base)"
+  },
+  "lever_A_stars": {
+    "value": 1711.4149670685965,
+    "description": "Stars protected per year, lever A (base)"
+  },
+  "lever_A_stars_low": {
+    "value": 1675.9603204250088,
+    "description": "low case"
+  },
+  "lever_A_stars_high": {
+    "value": 1746.8696137121842,
+    "description": "high case"
+  },
+  "lever_B_late_avoided": {
+    "value": 942.4359980382541,
+    "description": "Late orders avoided per year, lever B (base)"
+  },
+  "lever_B_stars": {
+    "value": 1869.8190302999622,
+    "description": "Stars protected per year, lever B (base)"
+  },
+  "lever_B_stars_low": {
+    "value": 934.9095151499811,
+    "description": "low case"
+  },
+  "lever_B_stars_high": {
+    "value": 2804.728545449943,
+    "description": "high case"
+  },
+  "lever_C_late_avoided": {
+    "value": 0.0,
+    "description": "Late orders avoided per year, lever C (base)"
+  },
+  "lever_C_stars": {
+    "value": 2521.140575362814,
+    "description": "Stars protected per year, lever C (base)"
+  },
+  "lever_C_stars_low": {
+    "value": 0.0,
+    "description": "low case"
+  },
+  "lever_C_stars_high": {
+    "value": 5042.281150725628,
+    "description": "high case"
+  },
+  "pre_delivery_late_reviews_L12": {
+    "value": 4198.0,
+    "description": "Late orders reviewed before delivery, last 12 months"
+  }
+}
