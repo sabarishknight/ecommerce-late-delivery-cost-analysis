@@ -1,0 +1,6 @@
+priority,action,owner,effort,evidence,expected impact / year
+1,Send the review survey only after delivery is confirmed (or re-send it after arrival),CX / Product,Low (config change),94% of 3+-days-late orders rated before arrival; same-lateness gap 1.20★,"up to 5,042★ protected (upper bound)"
+2,"Launch a handoff rescue queue: auto-flag the riskiest 10% of parcels for expedite, re-route or proactive customer message",Logistics ops,Medium (model + workflow),Handoff model catches 33% of late orders in top 10% (out-of-time),"942 late orders avoided at 50% success (935–2,805★)"
+3,Replace the fixed-buffer promise with a route-aware quantile promise engine; retrain monthly,Product / Data science,Medium,At equal average promise: 7.7% → 6.6% late on unseen 2018 orders,"863 late orders avoided (~1,711★)"
+4,Renegotiate carrier SLAs on the top São Paulo-origin routes; add route-level late-rate targets,Logistics / Procurement,Medium–high,Route late rates persist (r = 0.73); 12 routes = 67% of 2018 late orders,Not quantified (depends on contract terms)
+5,"Enforce seller dispatch deadlines for high-volume sellers (alerts, then fees)",Seller success,Low–medium,Missed dispatch deadline: 21.1% late vs 5.4%,Not quantified (behavioural response unknown)

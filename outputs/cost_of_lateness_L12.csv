@@ -1,0 +1,7 @@
+metric,low,base,high,source
+Late deliveries,5762.0,5762.0,5762.0,fct_orders
+GMV on late orders (R$),1001110.3200000001,1001110.3200000001,1001110.3200000001,fct_orders
+Stars lost,11195.135888547118,11431.967024832451,11668.798161117784,AIPW effect ± 95% CI
+Extra 1-star reviews,2635.9684882294428,2708.731194894117,2781.493901558791,AIPW effect ± 95% CI
+Repeat buyers lost,0.0,15.949766674111968,42.70318101134709,"AIPW repeat effect, CI floored at 0"
+"Repeat GMV lost, 180 days (R$)",0.0,2518.6939878719913,7203.5383490020195,× 180-day spend of returning customers (± 95% CI)
